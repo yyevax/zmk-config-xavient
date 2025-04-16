@@ -10,7 +10,7 @@ config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
 	
 config ZMK_USB
-	default n
+	default y
 
 config ZMK_BLE
 	default y
