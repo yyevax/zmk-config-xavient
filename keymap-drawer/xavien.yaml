@@ -496,7 +496,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - OUT TOG
   - {t: MAC, h: toggle}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -504,7 +504,7 @@ layers:
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
   - '&bootloader'
-  - EP ON
+  - EP TOG
   - OUT USB
   - OUT BLE
   - '&sys_reset'

@@ -311,8 +311,8 @@ ZMK_HOLD_TAP(hmr,
                 label = "SYS"; //SYS
                 bindings = <
                 &bt BT_CLR          &none           &none             &none             &to DEF                   &to DEF           &none              &none           &none           &bt BT_CLR          
-                &none               &none           &none             &none             &to MAC                   &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4      
-                &bootloader     &ext_power EP_ON    &out OUT_USB      &out OUT_BLE      &sys_reset                &sys_reset        &none              &none      &ext_power EP_ON     &bootloader            
+                &none               &none           &none             &out OUT_TOG      &to MAC                   &bt BT_SEL 0      &bt BT_SEL 1       &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4      
+                &bootloader     &ext_power EP_TOG   &out OUT_USB      &out OUT_BLE      &sys_reset                &sys_reset        &none              &none      &ext_power EP_ON     &bootloader            
                                                     &trans            &trans            &trans                    &trans            &trans             &trans
                         >; 
                 };
