@@ -993,6 +993,22 @@ path.combo { stroke: #7f7f7f; }
 <rect rx="6" ry="6" x="126" y="83" width="28" height="26" class="combo"/>
 <text x="140" y="96" class="combo tap">Ctl+S</text>
 </g>
+<g class="combo combopos-8">
+<path d="M140,152 l-37,2" class="combo"/>
+<path d="M140,152 l38,6" class="combo"/>
+<rect rx="6" ry="6" x="126" y="139" width="28" height="26" class="combo"/>
+<text x="140" y="152" class="combo tap">
+<tspan x="140" dy="-0.6em">OUT</tspan><tspan x="140" dy="1.2em">TOG</tspan>
+</text>
+</g>
+<g class="combo combopos-9">
+<path d="M140,152 l-37,2" class="combo"/>
+<path d="M140,152 l38,6" class="combo"/>
+<rect rx="6" ry="6" x="126" y="139" width="28" height="26" class="combo"/>
+<text x="140" y="152" class="combo tap">
+<tspan x="140" dy="-0.6em">OUT</tspan><tspan x="140" dy="1.2em">TOG</tspan>
+</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 1366)" class="layer-MACNAV">

@@ -652,6 +652,9 @@ combos:
 - p: [11, 12, 13]
   k: Ctl+S
   l: [NAV]
+- p: [21, 22, 23]
+  k: OUT TOG
+  l: [NAV]
 - p: [1, 2]
   k: Gui+Z
   l: [MACNAV]
@@ -676,6 +679,9 @@ combos:
 - p: [11, 12, 13]
   k: Gui+S
   l: [MACNAV]
+- p: [21, 22, 23]
+  k: OUT TOG
+  l: [NAV]
 - p: [1, 2, 3]
   k: Ctl+F4
   l: [SCREEN]
