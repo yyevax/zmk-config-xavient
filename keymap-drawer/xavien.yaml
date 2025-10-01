@@ -132,10 +132,10 @@ layers:
   - '&mmv MOVE_Y(800)'
   - '&mmv MOVE_X(800)'
   - '&msc SCRL_RIGHT'
-  - ''
+  - ESC
   - Ctl+X
   - ''
-  - ''
+  - LSHFT
   - ''
   - ''
   - Alt+LEFT
@@ -169,10 +169,10 @@ layers:
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
   - '&msc SCRL_RIGHT'
-  - ''
+  - ESC
   - Gui+X
   - ''
-  - ''
+  - LSHFT
   - ''
   - ''
   - Gui+LEFT
