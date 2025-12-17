@@ -173,19 +173,19 @@ ZMK_HOLD_TAP(hmr,
                 default_layer {  
                 label = "BASE"; //DEFAULT
                 bindings = <
-                &kp Q                 &kp W         &kp F             &kp P             &kp B                      &kp J            &kp L              &kp U           &kp Y           &kp SEMI        
-                &hml LGUI A           &hml LALT R   &hml LCTRL S      &hml LSHFT T      &kp G                      &kp M            &hmr RSHFT N       &hmr RCTRL E    &hmr RALT I     &hmr RGUI O     
-                &kp Z                 &kp X         &kp C             &kp D             &kp V                      &kp K            &kp H              &kp COMMA       &kp DOT         &kp FSLH        
-                                                    &lt MEDIA ESC     &lt NAV TAB       &lt SCREEN SPACE            &lt SYM BSPC     &lt NUM RET        &lt FUN DEL
+                &kp ESC               &kp Q                 &kp W         &kp F             &kp P             &kp B                      &kp J            &kp L              &kp U           &kp Y           &kp SEMI        &kp BSPC                 
+                &kp LSFT              &hml LGUI A           &hml LALT R   &hml LCTRL S      &hml LSHFT T      &kp G                      &kp M            &hmr RSHFT N       &hmr RCTRL E    &hmr RALT I     &hmr RGUI O     &kp RET                   
+                &kp LCTRL             &kp Z                 &kp X         &kp C             &kp D             &kp V                      &kp K            &kp H              &kp COMMA       &kp DOT         &kp FSLH        &kp DEL                
+                                                                          &lt MEDIA ESC     &lt NAV TAB       &lt SCREEN SPACE           &lt SYM BSPC     &lt NUM RET        &lt FUN DEL
                         >;
                 };
                 mac_layer {  
                 label = "MAC"; //MAC DEFAULT
                 bindings = <
-                &kp Q                 &kp W         &kp F             &kp P             &kp B                      &kp J            &kp L              &kp U           &kp Y           &kp SEMI        
-                &hml LCTRL A          &hml LALT R   &hml LGUI S       &hml LSHFT T      &kp G                      &kp M            &hmr RSHFT N       &hmr LGUI E     &hmr RALT I     &hmr RCTRL O     
-                &kp Z                 &kp X         &kp C             &kp D             &kp V                      &kp K            &kp H              &kp COMMA       &kp DOT         &kp FSLH        
-                                                    &lt MEDIA ESC     &lt MACNAV TAB       &lt MACSCREEN SPACE        &lt SYM BSPC     &lt NUM RET        &lt FUN DEL
+                &kp ESC               &kp Q                 &kp W         &kp F             &kp P             &kp B                      &kp J            &kp L              &kp U           &kp Y           &kp SEMI        &kp BSPC                
+                &kp LSFT              &hml LCTRL A          &hml LALT R   &hml LGUI S       &hml LSHFT T      &kp G                      &kp M            &hmr RSHFT N       &hmr LGUI E     &hmr RALT I     &hmr RCTRL O    &kp RET                
+                &kp LCTRL             &kp Z                 &kp X         &kp C             &kp D             &kp V                      &kp K            &kp H              &kp COMMA       &kp DOT         &kp FSLH        &kp DEL        
+                                                                          &lt MEDIA ESC     &lt MACNAV TAB    &lt MACSCREEN SPACE        &lt SYM BSPC     &lt NUM RET        &lt FUN DEL
                         >;
                 };
                 num_layer {    
@@ -203,7 +203,7 @@ ZMK_HOLD_TAP(hmr,
                 bindings = <
                 &kp LA(LEFT)     &kp LA(RIGHT)      &kp UP            &kp LC(C)         &kp LC(V)                  &none            &msc SCRL_UP       &mmv MOVE_Y(-ZMK_POINTING_DEFAULT_MOVE_VAL)    &msc SCRL_DOWN  &none                
                 &kp HOME              &kp LEFT      &kp DOWN          &kp RIGHT         &kp END                    &msc SCRL_LEFT   &mmv MOVE_X(-ZMK_POINTING_DEFAULT_MOVE_VAL)     &mmv MOVE_Y(ZMK_POINTING_DEFAULT_MOVE_VAL)  &mmv MOVE_X(ZMK_POINTING_DEFAULT_MOVE_VAL) &msc SCRL_RIGHT           
-                &kp ESC               &kp LC(X)     &none             &kp LSHFT         &none                      &none            &kp LA(LEFT)       &kp LA(RIGHT)   &none           &none           
+                &kp ESC               &kp LC(X)     &kp LCTRL         &kp LSHFT         &none                      &none            &kp LA(LEFT)       &kp LA(RIGHT)   &none           &none           
                                                     &none             &none             &none                      &mkp LCLK        &mkp RCLK          &none
                         >;  
                 };
@@ -212,7 +212,7 @@ ZMK_HOLD_TAP(hmr,
                 bindings = <
                 &none                     &none     &kp UP            &kp LG(C)         &kp LG(V)                  &none            &msc SCRL_DOWN     &mmv MOVE_UP    &msc SCRL_UP    &none                
                 &kp HOME              &kp LEFT      &kp DOWN          &kp RIGHT         &kp END                    &msc SCRL_LEFT   &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT &msc SCRL_RIGHT           
-                &kp ESC               &kp LG(X)     &none             &kp LSHFT         &none                      &none            &kp LG(LEFT)       &kp LG(RIGHT)   &none           &none                     
+                &kp ESC               &kp LG(X)     &kp LCTRL         &kp LSHFT         &none                      &none            &kp LG(LEFT)       &kp LG(RIGHT)   &none           &none                     
                                                     &none             &none             &none                      &mkp LCLK        &mkp RCLK          &none
                         >;  
                 };
