@@ -27,7 +27,7 @@ include:
     shield: xavien_right_master nice_view
   - board: nice_nano@2
     shield: settings_reset
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: settings_reset
   
 
