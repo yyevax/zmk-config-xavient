@@ -4,7 +4,7 @@
 
 	chosen {
 		zmk,kscan = &mock_kscan;
-    		zmk,matrix_transform = &default_transform;
+    		zmk,matrix_transform = &six_column_transform;
 	};
 
 	default_transform: keymap_transform_0 {
