@@ -24,7 +24,7 @@
  * SOFTWARE.
  */
 
-/*                              36 KEY MATRIX / LAYOUT MAPPING
+/*                              42 KEY MATRIX / LAYOUT MAPPING
 
   ╭───────────────────────┬────────────────────────╮ ╭─────────────────────────┬─────────────────────────╮
   │ 36  0   1   2   3   4 │  5   6   7   8   9 39  │ │ LT5 LT4 LT3 LT2 LT1 LT0 │ RT0 RT1 RT2 RT3 RT4 RT5 │
@@ -89,7 +89,7 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4  // right-hand keys
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2                                      // thumb keys
 
-#define LAYER_FROM36( \
+#define LAYER_FROM42( \
    k36, k00, k01, k02, k03, k04, k05, k06, k07, k08, k09, k39, \
    k37, k10, k11, k12, k13, k14, k15, k16, k17, k18, k19, k40, \
    k38, k20, k21, k22, k23, k24, k25, k26, k27, k28, k29, k41, \
