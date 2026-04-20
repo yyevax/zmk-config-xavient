@@ -31,22 +31,23 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9)
 	};
 
 	kscan0: kscan {
-		compatible = "zmk,kscan-gpio-matrix";
-		label = "KSCAN";
+        compatible = "zmk,kscan-gpio-matrix";
+        label = "KSCAN";
+        diode-direction = "col2row";
+        
+        // These define the size of a SINGLE half
+        columns = <6>;
+        rows = <4>;
 
-		diode-direction = "col2row";
-// ADD THESE TWO LINES:
-    columns = <6>; 
-    rows = <4>;
-		row-gpios
-			= <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			, <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			;
-			wakeup-source;
+        row-gpios
+            = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            ;
 
-	};
+        wakeup-source;
+    }; // This brace closes kscan0
 
 	// TODO: per-key RGB node(s)?
 };
