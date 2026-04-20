@@ -13,21 +13,21 @@
 #
 ---
 include:
-  - board: nice_nano@2
+  - board: nice_nano@2//zmk
     shield: xavien_left nice_view
-  - board: nice_nano@2
+  - board: nice_nano@2//zmk
     shield: xavien_right nice_view
-  - board: nice_nano@2
+  - board: nice_nano@2//zmk
     shield: xavien_dongle
-  - board: xiao_ble/zmk
+  - board: xiao_ble//zmk
     shield: xavien_dongle_xiao
-  - board: nice_nano@2
+  - board: nice_nano@2//zmk
     shield: xavien_left_master nice_view
-  - board: nice_nano@2
+  - board: nice_nano@2//zmk
     shield: xavien_right_master nice_view
-  - board: nice_nano@2
+  - board: nice_nano@2//zmk
     shield: settings_reset
-  - board: xiao_ble/zmk
+  - board: xiao_ble//zmk
     shield: settings_reset
   
 
