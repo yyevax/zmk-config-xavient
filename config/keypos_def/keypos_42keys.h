@@ -35,57 +35,57 @@
 
 #pragma once
 
-// Left-hand keys (Linear 0-5, 12-17, 24-29)
-#define LT5 0    
-#define LT4 1    
-#define LT3 2    
-#define LT2 3    
-#define LT1 4    
-#define LT0 5
+// Left-hand keys (0-5, 12-17, 24-29)
+#define LT5 0   // ESC
+#define LT4 1   // Q
+#define LT3 2   // W
+#define LT2 3   // F
+#define LT1 4   // P
+#define LT0 5   // B
 
-#define LM5 12   
-#define LM4 13  
-#define LM3 14   
-#define LM2 15  
-#define LM1 16 
-#define LM0 17
+#define LM5 12  // LSFT
+#define LM4 13  // A
+#define LM3 14  // R
+#define LM2 15  // S
+#define LM1 16  // T
+#define LM0 17  // G
 
-#define LB5 24  
-#define LB4 25   
-#define LB3 26  
-#define LB2 27
-#define LB1 28  
-#define LB0 29
+#define LB5 24  // LCTRL
+#define LB4 25  // Z
+#define LB3 26  // X
+#define LB2 27  // C
+#define LB1 28  // D
+#define LB0 29  // V
 
-// Right-hand keys (Linear 6-11, 18-23, 30-35)
-#define RT0 6   
-#define RT1 7  
-#define RT2 8   
-#define RT3 9  
-#define RT4 10 
-#define RT5 11
+// Right-hand keys (6-11, 18-23, 30-35)
+#define RT0 6   // J
+#define RT1 7   // L
+#define RT2 8   // U
+#define RT3 9   // Y
+#define RT4 10  // SEMI
+#define RT5 11  // BSPC
 
-#define RM0 18 
-#define RM1 19 
-#define RM2 20 
-#define RM3 21 
-#define RM4 22 
-#define RM5 23
+#define RM0 18  // M
+#define RM1 19  // N
+#define RM2 20  // E
+#define RM1 21  // I
+#define RM4 22  // O
+#define RM5 23  // RET
 
-#define RB0 30 
-#define RB1 31  
-#define RB2 32 
-#define RB3 33  
-#define RB4 34  
-#define RB5 35
+#define RB0 30  // K
+#define RB1 31  // H
+#define RB2 32  // COMMA
+#define RB3 33  // DOT
+#define RB4 34  // FSLH
+#define RB5 35  // DEL
 
-// Thumb keys (Indices 36-41)
-#define LH2 36 
+// Thumb keys (36-41)
+#define LH2 36  
 #define LH1 37 
-#define LH0 38
+#define LH0 38 
 
-#define RH0 39
-#define RH1 40 
+#define RH0 39  
+#define RH1 40  
 #define RH2 41
 
 #define KEYS_L LT0 LT1 LT2 LT3 LT4 LT5 LM0 LM1 LM2 LM3 LM4 LM5 LB0 LB1 LB2 LB3 LB4 LB5 // left-hand keys
