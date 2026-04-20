@@ -68,7 +68,7 @@
 #define RM0 18  // M
 #define RM1 19  // N
 #define RM2 20  // E
-#define RM1 21  // I
+#define RM3 21  // I
 #define RM4 22  // O
 #define RM5 23  // RET
 
