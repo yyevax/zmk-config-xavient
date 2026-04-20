@@ -35,8 +35,6 @@
 
 #pragma once
 
-#pragma once
-
 // Left-hand keys (Linear 0-5, 12-17, 24-29)
 #define LT5 0    #define LT4 1    #define LT3 2    #define LT2 3    #define LT1 4    #define LT0 5
 #define LM5 12   #define LM4 13   #define LM3 14   #define LM2 15   #define LM1 16   #define LM0 17
