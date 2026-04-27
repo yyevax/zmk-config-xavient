@@ -1,7 +1,6 @@
 layout: {qmk_keyboard: obosob/arch_36}
 layers:
-  BASE: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, F1, F2, F3, F4, F5, F6]
-  MAC:
+  BASE:
   - ESC
   - Q
   - W
@@ -26,7 +25,7 @@ layers:
   - '&hmr RALT I'
   - '&hmr RGUI O'
   - RET
-  - RCTRL
+  - LCTRL
   - Z
   - X
   - C
@@ -41,6 +40,49 @@ layers:
   - {t: ESC, h: MED}
   - {t: TAB, h: NAV}
   - {t: SPACE, h: SCREEN}
+  - {t: BSPC, h: SYM}
+  - {t: RET, h: NUM}
+  - {t: DEL, h: FUN}
+  MAC:
+  - ESC
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - BSPC
+  - LSFT
+  - '&hml LCTRL A'
+  - '&hml LALT R'
+  - '&hml LGUI S'
+  - '&hml LSHFT T'
+  - G
+  - M
+  - '&hmr RSHFT N'
+  - '&hmr LGUI E'
+  - '&hmr RALT I'
+  - '&hmr RCTRL O'
+  - RET
+  - LCTRL
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - /
+  - DEL
+  - {t: ESC, h: MED}
+  - {t: TAB, h: MACNAV}
+  - {t: SPACE, h: MACSCREEN}
   - {t: BSPC, h: SYM}
   - {t: RET, h: NUM}
   - {t: DEL, h: FUN}
@@ -130,9 +172,49 @@ layers:
   - '&mkp LCLK'
   - '&mkp RCLK'
   - ''
-  MACNAV: ['', '', '', UP, Gui+C, Gui+V, '', '&msc SCRL_DOWN', '&mmv MOVE_UP', '&msc SCRL_UP', '', '', '', HOME, LEFT, DOWN, RIGHT, END, '&msc SCRL_LEFT', '&mmv MOVE_LEFT',
-    '&mmv MOVE_DOWN', '&mmv MOVE_RIGHT', '&msc SCRL_RIGHT', '', '', ESC, Gui+X, LCTRL, LSHFT, '', '', Gui+LEFT, Gui+RIGHT, '', '', '', '', '', '', '&mkp LCLK', '&mkp
-      RCLK', '']
+  MACNAV:
+  - ''
+  - ''
+  - ''
+  - UP
+  - Gui+C
+  - Gui+V
+  - ''
+  - '&msc SCRL_DOWN'
+  - '&mmv MOVE_UP'
+  - '&msc SCRL_UP'
+  - ''
+  - ''
+  - ''
+  - HOME
+  - LEFT
+  - DOWN
+  - RIGHT
+  - END
+  - '&msc SCRL_LEFT'
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_DOWN'
+  - '&mmv MOVE_RIGHT'
+  - '&msc SCRL_RIGHT'
+  - ''
+  - ''
+  - ESC
+  - Gui+X
+  - LCTRL
+  - LSHFT
+  - ''
+  - ''
+  - Gui+LEFT
+  - Gui+RIGHT
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - ''
   SYM:
   - ''
   - '~'
@@ -258,7 +340,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -517,7 +599,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
