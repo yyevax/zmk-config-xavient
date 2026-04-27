@@ -1,6 +1,6 @@
-layout: {qmk_keyboard: obosob/arch_36}
 layers:
   BASE:
+  - ESC
   - Q
   - W
   - F
@@ -11,6 +11,8 @@ layers:
   - U
   - Y
   - ;
+  - BSPC
+  - LSFT
   - '&hml LGUI A'
   - '&hml LALT R'
   - '&hml LCTRL S'
@@ -21,6 +23,8 @@ layers:
   - '&hmr RCTRL E'
   - '&hmr RALT I'
   - '&hmr RGUI O'
+  - RET
+  - LCTRL
   - Z
   - X
   - C
@@ -31,6 +35,7 @@ layers:
   - ','
   - .
   - /
+  - DEL
   - {t: ESC, h: MED}
   - {t: TAB, h: NAV}
   - {t: SPACE, h: SCREEN}
@@ -38,6 +43,7 @@ layers:
   - {t: RET, h: NUM}
   - {t: DEL, h: FUN}
   MAC:
+  - ESC
   - Q
   - W
   - F
@@ -48,6 +54,8 @@ layers:
   - U
   - Y
   - ;
+  - BSPC
+  - LSFT
   - '&hml LCTRL A'
   - '&hml LALT R'
   - '&hml LGUI S'
@@ -58,6 +66,8 @@ layers:
   - '&hmr LGUI E'
   - '&hmr RALT I'
   - '&hmr RCTRL O'
+  - RET
+  - LCTRL
   - Z
   - X
   - C
@@ -68,6 +78,7 @@ layers:
   - ','
   - .
   - /
+  - DEL
   - {t: ESC, h: MED}
   - {t: TAB, h: MACNAV}
   - {t: SPACE, h: MACSCREEN}
@@ -75,11 +86,14 @@ layers:
   - {t: RET, h: NUM}
   - {t: DEL, h: FUN}
   NUM:
+  - ''
   - '*'
   - '7'
   - '8'
   - '9'
   - +
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -95,11 +109,14 @@ layers:
   - '-'
   - '*'
   - /
+  - ''
+  - ''
   - '`'
   - '1'
   - '2'
   - '3'
   - \
+  - ''
   - ''
   - ''
   - ''
@@ -112,6 +129,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   NAV:
+  - ''
   - Alt+LEFT
   - Alt+RIGHT
   - UP
@@ -121,6 +139,8 @@ layers:
   - '&msc SCRL_UP'
   - '&mmv MOVE_Y(-800)'
   - '&msc SCRL_DOWN'
+  - ''
+  - ''
   - ''
   - HOME
   - LEFT
@@ -132,14 +152,17 @@ layers:
   - '&mmv MOVE_Y(800)'
   - '&mmv MOVE_X(800)'
   - '&msc SCRL_RIGHT'
+  - ''
+  - ''
   - ESC
   - Ctl+X
-  - ''
+  - LCTRL
   - LSHFT
   - ''
   - ''
   - Alt+LEFT
   - Alt+RIGHT
+  - ''
   - ''
   - ''
   - ''
@@ -151,6 +174,7 @@ layers:
   MACNAV:
   - ''
   - ''
+  - ''
   - UP
   - Gui+C
   - Gui+V
@@ -158,6 +182,8 @@ layers:
   - '&msc SCRL_DOWN'
   - '&mmv MOVE_UP'
   - '&msc SCRL_UP'
+  - ''
+  - ''
   - ''
   - HOME
   - LEFT
@@ -169,14 +195,17 @@ layers:
   - '&mmv MOVE_DOWN'
   - '&mmv MOVE_RIGHT'
   - '&msc SCRL_RIGHT'
+  - ''
+  - ''
   - ESC
   - Gui+X
-  - ''
+  - LCTRL
   - LSHFT
   - ''
   - ''
   - Gui+LEFT
   - Gui+RIGHT
+  - ''
   - ''
   - ''
   - ''
@@ -186,11 +215,14 @@ layers:
   - '&mkp RCLK'
   - ''
   SYM:
+  - ''
   - '~'
   - '&'
   - '*'
   - (
   - _
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -207,10 +239,13 @@ layers:
   - ''
   - ''
   - ''
+  - ''
+  - ''
   - '!'
   - '@'
   - '#'
   - \
+  - ''
   - ''
   - ''
   - ''
@@ -224,10 +259,13 @@ layers:
   - {t: ▽, type: trans}
   SCREEN:
   - ''
+  - ''
   - Ctl+W
   - Ctl+F
   - Ctl+Sft+TAB
   - Ctl+TAB
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -245,9 +283,12 @@ layers:
   - ''
   - ''
   - ''
+  - ''
+  - ''
   - Gui+Ctl+F4
   - Ctl+Gui+LEFT
   - Ctl+Gui+RIGHT
+  - ''
   - ''
   - ''
   - ''
@@ -262,9 +303,13 @@ layers:
   MACSCREEN:
   - ''
   - ''
+  - ''
+  - ''
   - Gui+F
   - Ctl+Sft+TAB
   - Ctl+TAB
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -275,6 +320,8 @@ layers:
   - Gui+S
   - Sft+TAB
   - '&swappermac'
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -297,11 +344,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   FUN:
+  - ''
   - F12
   - F7
   - F8
   - F9
   - PSCRN
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -317,11 +367,14 @@ layers:
   - ''
   - ''
   - ''
+  - ''
+  - ''
   - F10
   - F1
   - F2
   - F3
   - PAUSE BREAK
+  - ''
   - ''
   - ''
   - ''
@@ -334,11 +387,14 @@ layers:
   - ''
   - {type: held}
   MED:
+  - ''
   - VOL UP
   - '&mkp LCLK'
   - '&mmv MOVE_UP'
   - '&mkp RCLK'
   - '&msc SCRL_UP'
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -355,10 +411,13 @@ layers:
   - ''
   - ''
   - ''
+  - ''
+  - ''
   - PREV
   - PP
   - NEXT
   - STOP
+  - ''
   - ''
   - ''
   - ''
@@ -371,11 +430,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   VALO:
+  - ''
   - TAB
   - Q
   - W
   - E
   - R
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -391,11 +453,14 @@ layers:
   - ''
   - ''
   - ''
+  - ''
+  - ''
   - LCTRL
   - Z
   - X
   - C
   - '&bhm N4 B'
+  - ''
   - ''
   - ''
   - ''
@@ -408,11 +473,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   VAL2:
+  - ''
   - CAPSLOCK
   - ''
   - W
   - '4'
   - B
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -428,11 +496,14 @@ layers:
   - ''
   - ''
   - ''
+  - ''
+  - ''
   - '&swapper'
   - ''
   - T
   - Y
   - V
+  - ''
   - ''
   - ''
   - ''
@@ -445,6 +516,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   EXTRA:
+  - ''
   - Q
   - W
   - E
@@ -455,6 +527,8 @@ layers:
   - I
   - O
   - P
+  - ''
+  - ''
   - A
   - S
   - D
@@ -465,6 +539,8 @@ layers:
   - K
   - L
   - ;
+  - ''
+  - ''
   - Z
   - X
   - C
@@ -475,14 +551,16 @@ layers:
   - ','
   - .
   - /
+  - ''
   - ESC
   - TAB
   - SPACE
   - BSPC
   - RET
   - {t: BASE, h: toggle}
-  TAP: [Q, W, F, P, B, J, L, U, Y, ;, A, R, S, T, G, M, N, E, I, O, Z, X, C, D, V, K, H, ',', ., /, ESC, TAB, SPACE, BSPC, RET, DEL]
+  TAP: ['', Q, W, F, P, B, J, L, U, Y, ;, '', '', A, R, S, T, G, M, N, E, I, O, '', '', Z, X, C, D, V, K, H, ',', ., /, '', ESC, TAB, SPACE, BSPC, RET, DEL]
   SYS:
+  - ''
   - BT CLR
   - ''
   - ''
@@ -493,6 +571,8 @@ layers:
   - ''
   - ''
   - BT CLR
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -503,6 +583,8 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
+  - ''
+  - ''
   - '&bootloader'
   - EP TOG
   - OUT USB
@@ -513,6 +595,7 @@ layers:
   - ''
   - EP ON
   - '&bootloader'
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}

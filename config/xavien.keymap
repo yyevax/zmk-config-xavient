@@ -1,3 +1,9 @@
 
 #include "keypos_def/keypos_42keys.h"
 #include "includes/keymap.dtsi"
+
+/ {
+    chosen {
+        zmk,physical-layout = &foostan_corne_6col_layout;
+    };
+};
