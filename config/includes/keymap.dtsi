@@ -51,7 +51,7 @@
 #define TAB_LT LC(LS(TAB))
 
 // Extra key bindings
-#define SWP_POS 13
+#define SWP_POS 16
 
 &lt { quick_tap_ms = <250>; };
 &lt { quick_tap_ms = <250>; };
@@ -175,7 +175,7 @@ ZMK_HOLD_TAP(hmr,
             bindings = <LAYER_FROM42(
                 &kp ESC,      &kp Q,        &kp W,        &kp F,        &kp P,        &kp B,        &kp J,        &kp L,        &kp U,        &kp Y,        &kp SEMI,     &kp BSPC,
                 &kp LSFT,     &hml LGUI A,  &hml LALT R,  &hml LCTRL S, &hml LSHFT T, &kp G,        &kp M,        &hmr RSHFT N, &hmr RCTRL E, &hmr RALT I,  &hmr RGUI O,  &kp RET,
-                &kp LCTRL,    &kp Z,        &kp X,        &kp C,        &kp D,        &kp V,        &kp K,        &kp H,        &kp COMMA,    &kp DOT,      &kp FSLH,     &kp DEL,
+                &kp LSFT,    &kp Z,        &kp X,        &kp C,        &kp D,        &kp V,        &kp K,        &kp H,        &kp COMMA,    &kp DOT,      &kp FSLH,     &kp DEL,
                                                         &lt MEDIA ESC, &lt NAV TAB, &lt SCREEN SPACE, &lt SYM BSPC, &lt NUM RET, &lt FUN DEL
             )>;
         };
