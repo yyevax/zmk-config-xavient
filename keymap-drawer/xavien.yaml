@@ -1,3 +1,4 @@
+layout: {qmk_keyboard: obosob/arch_36}
 layers:
   BASE:
   - ESC
