@@ -1,48 +1,6 @@
 layout: {qmk_keyboard: obosob/arch_36}
 layers:
-  BASE:
-  - ESC
-  - Q
-  - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
-  - Y
-  - ;
-  - BSPC
-  - LSFT
-  - '&hml LGUI A'
-  - '&hml LALT R'
-  - '&hml LCTRL S'
-  - '&hml LSHFT T'
-  - G
-  - M
-  - '&hmr RSHFT N'
-  - '&hmr RCTRL E'
-  - '&hmr RALT I'
-  - '&hmr RGUI O'
-  - RET
-  - LCTRL
-  - Z
-  - X
-  - C
-  - D
-  - V
-  - K
-  - H
-  - ','
-  - .
-  - /
-  - DEL
-  - {t: ESC, h: MED}
-  - {t: TAB, h: NAV}
-  - {t: SPACE, h: SCREEN}
-  - {t: BSPC, h: SYM}
-  - {t: RET, h: NUM}
-  - {t: DEL, h: FUN}
+  BASE: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, F1, F2, F3, F4, F5, F6]
   MAC:
   - ESC
   - Q
@@ -129,49 +87,9 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  NAV:
-  - ''
-  - Alt+LEFT
-  - Alt+RIGHT
-  - UP
-  - Ctl+C
-  - Ctl+V
-  - ''
-  - '&msc SCRL_UP'
-  - '&mmv MOVE_Y(-800)'
-  - '&msc SCRL_DOWN'
-  - ''
-  - ''
-  - ''
-  - HOME
-  - LEFT
-  - DOWN
-  - RIGHT
-  - END
-  - '&msc SCRL_LEFT'
-  - '&mmv MOVE_X(-800)'
-  - '&mmv MOVE_Y(800)'
-  - '&mmv MOVE_X(800)'
-  - '&msc SCRL_RIGHT'
-  - ''
-  - ''
-  - ESC
-  - Ctl+X
-  - LCTRL
-  - LSHFT
-  - ''
-  - ''
-  - Alt+LEFT
-  - Alt+RIGHT
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - ''
+  NAV: ['', Alt+LEFT, Alt+RIGHT, UP, Ctl+C, Ctl+V, '', '&msc SCRL_UP', '&mmv MOVE_Y(-800)', '&msc SCRL_DOWN', '', '', '', HOME, LEFT, DOWN, RIGHT, END, '&msc SCRL_LEFT',
+    '&mmv MOVE_X(-800)', '&mmv MOVE_Y(800)', '&mmv MOVE_X(800)', '&msc SCRL_RIGHT', '', '', ESC, Ctl+X, LCTRL, LSHFT, '', '', Alt+LEFT, Alt+RIGHT, '', '', '', '',
+    '', '', '&mkp LCLK', '&mkp RCLK', '']
   MACNAV:
   - ''
   - ''
@@ -297,7 +215,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -604,210 +522,210 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [1, 2]
+- p: [2, 3]
   k: '{'
   l: [BASE]
-- p: [2, 3]
+- p: [3, 4]
   k: '}'
   l: [BASE]
-- p: [11, 12]
+- p: [14, 15]
   k: (
   l: [BASE]
-- p: [12, 13]
+- p: [15, 16]
   k: )
   l: [BASE]
-- p: [21, 22]
+- p: [26, 27]
   k: '['
   l: [BASE]
-- p: [22, 23]
+- p: [27, 28]
   k: ']'
   l: [BASE]
-- p: [1, 2, 3]
+- p: [2, 3, 4]
   k: _
   l: [BASE]
-- p: [11, 12, 13]
+- p: [14, 15, 16]
   k: '-'
   l: [BASE]
-- p: [21, 22, 23]
+- p: [26, 27, 28]
   k: '!'
   l: [BASE]
-- p: [6, 7]
+- p: [7, 8]
   k: ':'
   l: [BASE]
-- p: [7, 8]
+- p: [8, 9]
   k: ;
   l: [BASE]
-- p: [16, 17]
+- p: [19, 20]
   k: '"'
   l: [BASE]
-- p: [17, 18]
+- p: [20, 21]
   k: ''''
   l: [BASE]
-- p: [26, 27]
+- p: [31, 32]
   k: <
   l: [BASE]
-- p: [27, 28]
+- p: [32, 33]
   k: '>'
   l: [BASE]
-- p: [6, 7, 8]
+- p: [7, 8, 9]
   k: '|'
   l: [BASE]
-- p: [16, 17, 18]
+- p: [19, 20, 21]
   k: '&'
   l: [BASE]
-- p: [26, 27, 28]
+- p: [31, 32, 33]
   k: '='
   l: [BASE]
-- p: [1, 2]
+- p: [2, 3]
   k: '{'
   l: [MAC]
-- p: [2, 3]
+- p: [3, 4]
   k: '}'
   l: [MAC]
-- p: [11, 12]
+- p: [14, 15]
   k: (
   l: [MAC]
-- p: [12, 13]
+- p: [15, 16]
   k: )
   l: [MAC]
-- p: [21, 22]
+- p: [26, 27]
   k: '['
   l: [MAC]
-- p: [22, 23]
+- p: [27, 28]
   k: ']'
   l: [MAC]
-- p: [1, 2, 3]
+- p: [2, 3, 4]
   k: _
   l: [MAC]
-- p: [11, 12, 13]
+- p: [14, 15, 16]
   k: '-'
   l: [MAC]
-- p: [21, 22, 23]
+- p: [26, 27, 28]
   k: '!'
   l: [MAC]
-- p: [6, 7]
+- p: [7, 8]
   k: ;
   l: [MAC]
-- p: [7, 8]
+- p: [8, 9]
   k: ':'
   l: [MAC]
-- p: [16, 17]
+- p: [19, 20]
   k: '"'
   l: [MAC]
-- p: [17, 18]
+- p: [20, 21]
   k: ''''
   l: [MAC]
-- p: [26, 27]
+- p: [31, 32]
   k: <
   l: [MAC]
-- p: [27, 28]
+- p: [32, 33]
   k: '>'
   l: [MAC]
-- p: [6, 7, 8]
+- p: [7, 8, 9]
   k: '|'
   l: [MAC]
-- p: [16, 17, 18]
+- p: [19, 20, 21]
   k: '&'
   l: [MAC]
-- p: [26, 27, 28]
+- p: [31, 32, 33]
   k: '='
   l: [MAC]
-- p: [1, 2]
+- p: [2, 3]
   k: Ctl+Z
   l: [NAV]
-- p: [2, 3]
+- p: [3, 4]
   k: Ctl+Y
   l: [NAV]
-- p: [11, 12]
+- p: [14, 15]
   k: BSPC
   l: [NAV]
-- p: [12, 13]
+- p: [15, 16]
   k: SPACE
   l: [NAV]
-- p: [13, 14]
+- p: [16, 17]
   k: CAPSLOCK
   l: [NAV]
-- p: [1, 2, 3]
+- p: [2, 3, 4]
   k: Ctl+F
   l: [NAV]
-- p: [10, 11]
+- p: [13, 14]
   k: Ctl+A
   l: [NAV]
-- p: [11, 12, 13]
+- p: [14, 15, 16]
   k: Ctl+S
   l: [NAV]
-- p: [21, 22, 23]
+- p: [26, 27, 28]
   k: OUT TOG
   l: [NAV]
-- p: [1, 2]
+- p: [2, 3]
   k: Gui+Z
   l: [MACNAV]
-- p: [2, 3]
+- p: [3, 4]
   k: Gui+Y
   l: [MACNAV]
-- p: [11, 12]
+- p: [14, 15]
   k: BSPC
   l: [MACNAV]
-- p: [12, 13]
+- p: [15, 16]
   k: SPACE
   l: [MACNAV]
-- p: [13, 14]
+- p: [16, 17]
   k: CAPSLOCK
   l: [MACNAV]
-- p: [1, 2, 3]
+- p: [2, 3, 4]
   k: Gui+F
   l: [MACNAV]
-- p: [10, 11]
+- p: [13, 14]
   k: Gui+A
   l: [MACNAV]
-- p: [11, 12, 13]
+- p: [14, 15, 16]
   k: Gui+S
   l: [MACNAV]
-- p: [21, 22, 23]
+- p: [26, 27, 28]
   k: OUT TOG
   l: [NAV]
-- p: [1, 2, 3]
+- p: [2, 3, 4]
   k: Ctl+F4
   l: [SCREEN]
-- p: [11, 12, 13]
+- p: [14, 15, 16]
   k: Alt+F4
   l: [SCREEN]
-- p: [21, 22, 23]
+- p: [26, 27, 28]
   k: Ctl+Gui+F4
   l: [SCREEN]
-- p: [1, 2, 3]
+- p: [2, 3, 4]
   k: Gui+W
   l: [MACSCREEN]
-- p: [11, 12, 13]
+- p: [14, 15, 16]
   k: Alt+F4
   l: [MACSCREEN]
-- p: [21, 22, 23]
+- p: [26, 27, 28]
   k: Ctl+Gui+F4
   l: [MACSCREEN]
-- p: [0, 9]
+- p: [1, 10]
   k: {t: BASE, h: toggle}
   l: [MACSCREEN]
-- p: [11, 12, 13]
+- p: [14, 15, 16]
   k: PP
   l: [MED]
-- p: [1, 2, 3]
+- p: [2, 3, 4]
   k: {t: BASE, h: toggle}
   l: [VAL2]
-- p: [30, 35]
+- p: [36, 41]
   k: {t: BASE, h: toggle}
   l: [EXTRA]
-- p: [30, 35]
+- p: [36, 41]
   k: {t: BASE, h: toggle}
   l: [TAP]
-- p: [4, 5]
+- p: [5, 6]
   k: {t: VALO, h: toggle}
   l: [SYS]
-- p: [14, 15]
+- p: [17, 18]
   k: {t: TAP, h: toggle}
   l: [SYS]
-- p: [24, 25]
+- p: [29, 30]
   k: {t: EXTRA, h: toggle}
   l: [SYS]
-- p: [0, 9]
+- p: [1, 10]
   k: {t: BASE, h: toggle}
   l: [SYS]

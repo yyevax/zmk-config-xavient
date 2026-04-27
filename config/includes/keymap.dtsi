@@ -172,12 +172,12 @@ ZMK_HOLD_TAP(hmr,
 
         default_layer {
             label = "BASE"; // DEFAULT
-            bindings = <LAYER_FROM42(
-                &kp ESC,      &kp Q,        &kp W,        &kp F,        &kp P,        &kp B,        &kp J,        &kp L,        &kp U,        &kp Y,        &kp SEMI,     &kp BSPC,
-                &kp LSFT,     &hml LGUI A,  &hml LALT R,  &hml LCTRL S, &hml LSHFT T, &kp G,        &kp M,        &hmr RSHFT N, &hmr RCTRL E, &hmr RALT I,  &hmr RGUI O,  &kp RET,
-                &kp LCTRL,    &kp Z,        &kp X,        &kp C,        &kp D,        &kp V,        &kp K,        &kp H,        &kp COMMA,    &kp DOT,      &kp FSLH,     &kp DEL,
-                                                        &lt MEDIA ESC, &lt NAV TAB, &lt SCREEN SPACE, &lt SYM BSPC, &lt NUM RET, &lt FUN DEL
-            )>;
+           bindings = <LAYER_FROM42(
+    &kp N0, &kp N1, &kp N2, &kp N3, &kp N4, &kp N5, &kp N6, &kp N7, &kp N8, &kp N9, &kp A, &kp B,
+    &kp C,  &kp D,  &kp E,  &kp F,  &kp G,  &kp H,  &kp I,  &kp J,  &kp K,  &kp L, &kp M, &kp N,
+    &kp O,  &kp P,  &kp Q,  &kp R,  &kp S,  &kp T,  &kp U,  &kp V, &kp W, &kp X, &kp Y, &kp Z,
+    &kp F1, &kp F2, &kp F3, &kp F4, &kp F5, &kp F6
+)>;
         };
 
         mac_layer {
