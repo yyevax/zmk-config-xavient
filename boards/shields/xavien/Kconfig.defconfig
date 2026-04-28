@@ -65,23 +65,3 @@ endchoice
 endif # LVGL
 
 endif
-
-if SHIELD_XAVIEN_LEFT || SHIELD_XAVIEN_RIGHT || SHIELD_XAVIEN_LEFT_MASTER || SHIELD_XAVIEN_RIGHT_MASTER
-
-config ZMK_RGB_UNDERGLOW
-    bool "Enable RGB Underglow"
-    default y
-
-config ZMK_RGB_UNDERGLOW_BRT_START
-    int "Starting Brightness (0-100)"
-    default 30
-
-config ZMK_RGB_UNDERGLOW_HUE_START
-    int "Starting Hue (0-360)"
-    default 75
-
-config ZMK_RGB_UNDERGLOW_SAT_START
-    int "Starting Saturation (0-100)"
-    default 100
-
-endif
