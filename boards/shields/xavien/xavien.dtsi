@@ -22,7 +22,7 @@
 		zmk,kscan = &kscan0;
     		zmk,physical-layout = &xavien_five_col_layout;
     		zephyr,display = &oled;
-		zmk,underglow = &led_strip;
+			zmk,underglow = &led_strip;
 	};
 
 	default_transform: keymap_transform_0 {
@@ -78,7 +78,6 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)  RC(2,6) RC(2,7) RC(2,8) RC(2,9)
 
 
 &pro_micro_i2c {
-	compatible = "nordic,nrf-twim";
     status = "okay";
 
     oled: ssd1306@3c {
