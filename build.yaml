@@ -20,9 +20,11 @@ include:
   - board: nice_nano@2
     shield: xavien_dongle
     snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: xiao_ble
     shield: xavien_dongle_xiao
     snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: nice_nano@2
     shield: xavien_left-master nice_view
     snippet: studio-rpc-usb-uart
