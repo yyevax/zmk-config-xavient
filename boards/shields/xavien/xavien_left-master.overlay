@@ -6,6 +6,11 @@
 
 #include "xavien.dtsi"
 
+/{chosen {
+    		zephyr,display = &oled;
+	};
+};
+
 &led_strip {
     chain-length = <56>;
 };
