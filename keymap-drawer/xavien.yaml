@@ -4,88 +4,45 @@ layers:
   - ESC
   - Q
   - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
+  - E
+  - R
+  - T
   - Y
-  - ;
+  - U
+  - I
+  - O
+  - P
   - BSPC
   - LSFT
   - '&hml LGUI A'
-  - '&hml LALT R'
-  - '&hml LCTRL S'
-  - '&hml LSHFT T'
+  - '&hml LALT S'
+  - '&hml LCTRL D'
+  - '&hml LSHFT F'
   - G
-  - M
-  - '&hmr RSHFT N'
-  - '&hmr RCTRL E'
-  - '&hmr RALT I'
-  - '&hmr RGUI O'
+  - H
+  - '&hmr RSHFT J'
+  - '&hmr RCTRL K'
+  - '&hmr RALT L'
+  - '&hmr RGUI SEMI'
   - RET
   - LSFT
   - Z
   - X
   - C
-  - D
   - V
-  - K
-  - H
+  - B
+  - N
+  - M
   - ','
   - .
   - /
   - DEL
-  - {t: ESC, h: MED}
+  - {t: ESC, h: MEDIA}
   - {t: TAB, h: NAV}
   - {t: SPACE, h: SCREEN}
-  - {t: BSPC, h: SYM}
+  - {t: BSPC, h: SYMBOL}
   - {t: RET, h: NUM}
-  - {t: DEL, h: FUN}
-  MAC:
-  - ESC
-  - Q
-  - W
-  - F
-  - P
-  - B
-  - J
-  - L
-  - U
-  - Y
-  - ;
-  - BSPC
-  - LSFT
-  - '&hml LCTRL A'
-  - '&hml LALT R'
-  - '&hml LGUI S'
-  - '&hml LSHFT T'
-  - G
-  - M
-  - '&hmr RSHFT N'
-  - '&hmr LGUI E'
-  - '&hmr RALT I'
-  - '&hmr RCTRL O'
-  - RET
-  - LCTRL
-  - Z
-  - X
-  - C
-  - D
-  - V
-  - K
-  - H
-  - ','
-  - .
-  - /
-  - DEL
-  - {t: ESC, h: MED}
-  - {t: TAB, h: MACNAV}
-  - {t: SPACE, h: MACSCREEN}
-  - {t: BSPC, h: SYM}
-  - {t: RET, h: NUM}
-  - {t: DEL, h: FUN}
+  - {t: DEL, h: FUNCTION}
   NUM:
   - ''
   - '*'
@@ -172,50 +129,7 @@ layers:
   - '&mkp LCLK'
   - '&mkp RCLK'
   - ''
-  MACNAV:
-  - ''
-  - ''
-  - ''
-  - UP
-  - Gui+C
-  - Gui+V
-  - ''
-  - '&msc SCRL_DOWN'
-  - '&mmv MOVE_UP'
-  - '&msc SCRL_UP'
-  - ''
-  - ''
-  - ''
-  - HOME
-  - LEFT
-  - DOWN
-  - RIGHT
-  - END
-  - '&msc SCRL_LEFT'
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
-  - '&msc SCRL_RIGHT'
-  - ''
-  - ''
-  - ESC
-  - Gui+X
-  - LCTRL
-  - LSHFT
-  - ''
-  - ''
-  - Gui+LEFT
-  - Gui+RIGHT
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - '&mkp LCLK'
-  - '&mkp RCLK'
-  - ''
-  SYM:
+  SYMBOL:
   - ''
   - '~'
   - '&'
@@ -261,7 +175,7 @@ layers:
   SCREEN:
   - ''
   - ''
-  - Ctl+W
+  - ''
   - Ctl+F
   - Ctl+Sft+TAB
   - Ctl+TAB
@@ -295,56 +209,13 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  MACSCREEN:
   - ''
   - ''
   - ''
-  - ''
-  - Gui+F
-  - Ctl+Sft+TAB
-  - Ctl+TAB
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Gui+A
-  - Gui+B
-  - Gui+S
-  - Sft+TAB
-  - '&swappermac'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - Ctl+LEFT
-  - Ctl+RIGHT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  FUN:
+  FUNCTION:
   - ''
   - F12
   - F7
@@ -384,28 +255,16 @@ layers:
   - APP
   - TAB
   - SPACE
-  - {t: ▽, type: trans}
+  - ''
   - ''
   - {type: held}
-  MED:
+  MEDIA:
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - VOL UP
-  - '&mkp LCLK'
-  - '&mmv MOVE_UP'
-  - '&mkp RCLK'
-  - '&msc SCRL_UP'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - VOL DN
-  - '&mmv MOVE_LEFT'
-  - '&mmv MOVE_DOWN'
-  - '&mmv MOVE_RIGHT'
-  - '&msc SCRL_DOWN'
   - ''
   - ''
   - ''
@@ -417,6 +276,16 @@ layers:
   - PREV
   - PP
   - NEXT
+  - VOL DN
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - STOP
   - ''
   - ''
@@ -424,13 +293,15 @@ layers:
   - ''
   - ''
   - ''
+  - ''
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  VALO:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  GAME:
   - ''
   - TAB
   - Q
@@ -460,49 +331,6 @@ layers:
   - Z
   - X
   - C
-  - '&bhm N4 B'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - V
-  - {t: V, h: VAL2}
-  - SPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  VAL2:
-  - ''
-  - CAPSLOCK
-  - ''
-  - W
-  - '4'
-  - B
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ESC
-  - '1'
-  - '2'
-  - '3'
-  - G
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&swapper'
-  - ''
-  - T
-  - Y
   - V
   - ''
   - ''
@@ -510,55 +338,16 @@ layers:
   - ''
   - ''
   - ''
-  - {t: BASE, h: toggle}
-  - {t: LCTRL, type: held}
+  - ''
+  - ''
   - SPACE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  EXTRA:
-  - ''
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - ''
-  - ''
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''
-  - ''
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - ''
-  - ESC
-  - TAB
-  - SPACE
-  - BSPC
-  - RET
-  - {t: BASE, h: toggle}
+  EXTRA: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
+    '', '', '', '']
+  EXTRA_TWO: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
+    '', '', '', '', '']
   TAP: ['', Q, W, F, P, B, J, L, U, Y, ;, '', '', A, R, S, T, G, M, N, E, I, O, '', '', Z, X, C, D, V, K, H, ',', ., /, '', ESC, TAB, SPACE, BSPC, RET, DEL]
   SYS:
   - ''
@@ -566,8 +355,8 @@ layers:
   - ''
   - ''
   - ''
-  - {t: BASE, h: toggle}
-  - {t: BASE, h: toggle}
+  - {t: GAME, h: toggle}
+  - {t: TAP, h: toggle}
   - ''
   - ''
   - ''
@@ -578,7 +367,7 @@ layers:
   - ''
   - ''
   - OUT TOG
-  - {t: MAC, h: toggle}
+  - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -599,10 +388,10 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
 combos:
 - p: [2, 3]
   k: '{'
@@ -659,60 +448,6 @@ combos:
   k: '='
   l: [BASE]
 - p: [2, 3]
-  k: '{'
-  l: [MAC]
-- p: [3, 4]
-  k: '}'
-  l: [MAC]
-- p: [14, 15]
-  k: (
-  l: [MAC]
-- p: [15, 16]
-  k: )
-  l: [MAC]
-- p: [26, 27]
-  k: '['
-  l: [MAC]
-- p: [27, 28]
-  k: ']'
-  l: [MAC]
-- p: [2, 3, 4]
-  k: _
-  l: [MAC]
-- p: [14, 15, 16]
-  k: '-'
-  l: [MAC]
-- p: [26, 27, 28]
-  k: '!'
-  l: [MAC]
-- p: [7, 8]
-  k: ;
-  l: [MAC]
-- p: [8, 9]
-  k: ':'
-  l: [MAC]
-- p: [19, 20]
-  k: '"'
-  l: [MAC]
-- p: [20, 21]
-  k: ''''
-  l: [MAC]
-- p: [31, 32]
-  k: <
-  l: [MAC]
-- p: [32, 33]
-  k: '>'
-  l: [MAC]
-- p: [7, 8, 9]
-  k: '|'
-  l: [MAC]
-- p: [19, 20, 21]
-  k: '&'
-  l: [MAC]
-- p: [31, 32, 33]
-  k: '='
-  l: [MAC]
-- p: [2, 3]
   k: Ctl+Z
   l: [NAV]
 - p: [3, 4]
@@ -739,33 +474,6 @@ combos:
 - p: [26, 27, 28]
   k: OUT TOG
   l: [NAV]
-- p: [2, 3]
-  k: Gui+Z
-  l: [MACNAV]
-- p: [3, 4]
-  k: Gui+Y
-  l: [MACNAV]
-- p: [14, 15]
-  k: BSPC
-  l: [MACNAV]
-- p: [15, 16]
-  k: SPACE
-  l: [MACNAV]
-- p: [16, 17]
-  k: CAPSLOCK
-  l: [MACNAV]
-- p: [2, 3, 4]
-  k: Gui+F
-  l: [MACNAV]
-- p: [13, 14]
-  k: Gui+A
-  l: [MACNAV]
-- p: [14, 15, 16]
-  k: Gui+S
-  l: [MACNAV]
-- p: [26, 27, 28]
-  k: OUT TOG
-  l: [NAV]
 - p: [2, 3, 4]
   k: Ctl+F4
   l: [SCREEN]
@@ -775,32 +483,11 @@ combos:
 - p: [26, 27, 28]
   k: Ctl+Gui+F4
   l: [SCREEN]
-- p: [2, 3, 4]
-  k: Gui+W
-  l: [MACSCREEN]
-- p: [14, 15, 16]
-  k: Alt+F4
-  l: [MACSCREEN]
-- p: [26, 27, 28]
-  k: Ctl+Gui+F4
-  l: [MACSCREEN]
-- p: [1, 10]
-  k: {t: BASE, h: toggle}
-  l: [MACSCREEN]
-- p: [14, 15, 16]
-  k: PP
-  l: [MED]
-- p: [2, 3, 4]
-  k: {t: BASE, h: toggle}
-  l: [VAL2]
-- p: [36, 41]
-  k: {t: BASE, h: toggle}
-  l: [EXTRA]
 - p: [36, 41]
   k: {t: BASE, h: toggle}
   l: [TAP]
 - p: [5, 6]
-  k: {t: VALO, h: toggle}
+  k: {t: GAME, h: toggle}
   l: [SYS]
 - p: [17, 18]
   k: {t: TAP, h: toggle}
