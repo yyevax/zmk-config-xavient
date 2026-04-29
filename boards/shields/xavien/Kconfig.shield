@@ -14,7 +14,7 @@ config SHIELD_XAVIEN_DONGLE_XIAO
 	def_bool $(shields_list_contains,xavien_dongle_xiao)
 
 config SHIELD_XAVIEN_LEFT_MASTER
-	def_bool $(shields_list_contains,xavien_left-master)
+	def_bool $(shields_list_contains,xavien_left_master)
 
 config SHIELD_XAVIEN_RIGHT_MASTER
-	def_bool $(shields_list_contains,xavien_right-master)
+	def_bool $(shields_list_contains,xavien_right_master)
