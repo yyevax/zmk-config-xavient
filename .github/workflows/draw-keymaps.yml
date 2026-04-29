@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - 'config/*.keymap'
+      - 'config/*.dtsi'
       - 'config/includes/*.dtsi'
       - keymap-drawer/config.yaml
       - .github/workflows/draw-keymaps.yml
@@ -18,3 +19,5 @@ jobs:
       output_folder: keymap-drawer
       install_branch: main
       amend_commit: true
+      parse_args: "xavien:''"
+      draw_args: "xavien:'-k corne_rotated -l LAYOUT_split_3x6_3'"
