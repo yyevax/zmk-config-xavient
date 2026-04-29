@@ -20,12 +20,11 @@
 
 
 #define DEF 0
-#define MAC 1
-#define NUM 2
-#define NAV 3
-#define SYMBOL 4
+#define NUM 1
+#define NAV 2
+#define SYM 4
 #define SCREEN 5
-#define FUNCTION 6
+#define FUN 6
 #define MEDIA 7
 #define GAME 8
 #define EXTRA 9
