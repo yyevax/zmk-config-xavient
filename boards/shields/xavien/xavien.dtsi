@@ -20,7 +20,7 @@
 
 	chosen {
 		zmk,kscan = &kscan0;
-    		zmk,physical-layout = &xavien_five_col_layout;
+    		zmk,physical-layout = &xavien_six_col_layout;
 	};
 
 	default_transform: keymap_transform_0 {
