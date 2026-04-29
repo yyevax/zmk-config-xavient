@@ -109,23 +109,12 @@ ZMK_HOLD_TAP(hmr,
     };
 };
 
-// Access SYS Layer
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <5 6>;
+            if-layers = <3 4>;
             then-layer = <11>; 
-        };
-    };
-};
-
-/ {
-    conditional_layers1 {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <5 7>;
-            then-layer = <11>;
         };
     };
 };
