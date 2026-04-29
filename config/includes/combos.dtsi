@@ -50,31 +50,6 @@
         COMBO(AMPS,          &kp AMPS,       RM1 RM2 RM3,     DEF,          80,  50)  //    &
         COMBO(EQUAL,        &kp EQUAL,       RB1 RB2 RB3,     DEF,          80,  50)  //    =
 
-        //MAC
-        COMBO(LBRC_MAC,          &kp LBRC,       LT3 LT2,         MAC,          80,  50)  //    {
-        COMBO(RBRC_MAC,          &kp RBRC,       LT2 LT1,         MAC,          80,  50)  //    }
-        COMBO(LPAR_MAC,          &kp LPAR,       LM3 LM2,         MAC,          80,  50)  //    (
-        COMBO(RPAR_MAC,          &kp RPAR,       LM2 LM1,         MAC,          80,  50)  //    )
-        COMBO(LBKT_MAC,          &kp LBKT,       LB3 LB2,         MAC,          80,  50)  //    [
-        COMBO(RBKT_MAC,          &kp RBKT,       LB2 LB1,         MAC,          80,  50)  //    ]
-
-        COMBO(UNDER1_MAC,       &kp UNDER,       LT3 LT2 LT1,     MAC,          80,  50)  //    _
-        COMBO(MINUS_MAC,        &kp MINUS,       LM3 LM2 LM1,     MAC,          80,  50)  //    -
-        COMBO(EXCL_MAC,          &kp EXCL,       LB3 LB2 LB1,     MAC,          80,  50)  //    !
-
-        COMBO(SEMI_MAC,          &kp SEMI,       RT1 RT2,         MAC,          80,  50)  //    ;
-        COMBO(COLON_MAC,        &kp COLON,       RT2 RT3,         MAC,          80,  50)  //    :
-        COMBO(DQT_MAC,            &kp DQT,       RM1 RM2,         MAC,          80,  50)  //    "
-        COMBO(SQT_MAC,            &kp SQT,       RM2 RM3,         MAC,          80,  50)  //    '
-        COMBO(L_THAN_MAC,   &kp LESS_THAN,       RB1 RB2,         MAC,          80,  50)  //    <
-        COMBO(G_THAN_MAC,    &kp GREATER_THAN,   RB2 RB3,         MAC,          80,  50)  //    >
-
-        COMBO(PIPE_MAC,          &kp PIPE,       RT1 RT2 RT3,     MAC,          80,  50)  //    |
-        COMBO(AMPS_MAC,          &kp AMPS,       RM1 RM2 RM3,     MAC,          80,  50)  //    &
-        COMBO(EQUAL_MAC,        &kp EQUAL,       RB1 RB2 RB3,     MAC,          80,  50)  //    =
-
-
-
 
         //NAV
         COMBO(UNDO,         &kp LC(Z),       LT3 LT2,         NAV,          80,  50)  //    UNDO
@@ -89,38 +64,13 @@
         COMBO(BT_TOG,   &out OUT_TOG,    LB3 LB2 LB1,        NAV,          80,  50)  //    BLE TOGGLE
 
 
-        //MACNAV
-        COMBO(UNDO_MAC,         &kp LG(Z),       LT3 LT2,         MACNAV,      80,  50)  //    UNDO
-        COMBO(REDO_MAC,         &kp LG(Y),       LT2 LT1,         MACNAV,      80,  50)  //    REDO
-        COMBO(BSPC_MAC,          &kp BSPC,       LM3 LM2,         MACNAV,      80,  50)  //    BACKSPACE
-        COMBO(SPACE_MAC,        &kp SPACE,       LM2 LM1,         MACNAV,      80,  50)  //    SPACE
-        COMBO(CAPSLOCK_MAC,  &kp CAPSLOCK,       LM1 LM0,         MACNAV,      80,  50)  //    CAPSLOCK
-
-        COMBO(FIND_MAC,        &kp LG(F),    LT3 LT2 LT1,        MACNAV,       80,  50)  //    CTRL + F
-        COMBO(ALL_MAC,         &kp LG(A),        LM4 LM3,        MACNAV,       80,  50)  //    CTRL + A
-        COMBO(SAVE_MAC,        &kp LG(S),    LM3 LM2 LM1,        MACNAV,       80,  50)  //    CTRL + S
-        COMBO(BT_TOG_MAC,   &out OUT_TOG,    LB3 LB2 LB1,        NAV,          80,  50)  //    BLE TOGGLE
-
-
         //SCREEN
         COMBO(TAB_CLOSE,   &kp LC(F4),       LT3 LT2 LT1,     SCREEN,        80,  50)  //    CTRL + F4
         COMBO(WIN_CLOSE,   &kp LA(F4),       LM3 LM2 LM1,     SCREEN,        80,  50)  //    ALT  + F4
         COMBO(DESK_CLOSE,    &kp D_CL,       LB3 LB2 LB1,     SCREEN,        80,  50)  //    WIN  + CTRL   + TAB
 
-        //MACSCREEN
-        COMBO(TAB_CLOSE_MAC,   &kp LG(W),        LT3 LT2 LT1,     MACSCREEN,        80,  50)  //    CTRL + F4
-        COMBO(WIN_CLOSE_MAC,   &kp LA(F4),       LM3 LM2 LM1,     MACSCREEN,        80,  50)  //    ALT  + F4
-        COMBO(DESK_CLOSE_MAC,    &kp D_CL,       LB3 LB2 LB1,     MACSCREEN,        80,  50)  //    WIN  + CTRL   + TAB
-        COMBO(MAC_toDEF,         &to DEF,            LT4 RT4,     MACSCREEN,        80,  50)  //    WIN  + CTRL   + TAB
-
         //MEDIA
         COMBO(PLAYPAUSE,     &kp C_PP,       LM3 LM2 LM1,     MEDIA,        80,  50)  //    PLAY PAUSE
-        
-        //VALTWO
-        COMBO(TO_DEF,         &to DEF,       LT3 LT2 LT1,     VALTWO,       80,  50)  //    DEF LAYER CHANGE
-        
-        //EXTRA
-        COMBO(EXtoDEF,     &to DEF,       LH2 RH2,        EXTRA,        80,  50)  //    DEF LAYER CHANGE
 
         //TAP
         COMBO(toDEF,          &to DEF,       LH2 RH2,         TAP,          80,  50)  //    DEF LAYER CHANGE
