@@ -20,7 +20,7 @@
 
 	chosen {
 		zmk,kscan = &mock_kscan;
-    		zmk,physical-layout = &xavien_five_col_layout;
+    		zmk,physical-layout = &xavien_six_col_layout;
 
 	};
 
