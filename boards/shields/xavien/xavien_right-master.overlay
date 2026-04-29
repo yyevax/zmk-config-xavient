@@ -11,7 +11,7 @@
 	};
 };
 
-&default_transform {
+&six_column_transform {
     col-offset = <6>;
 };
 
