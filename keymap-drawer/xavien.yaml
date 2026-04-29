@@ -25,7 +25,7 @@ layers:
   - '&hmr RALT I'
   - '&hmr RGUI O'
   - RET
-  - LCRTL
+  - LSFT
   - Z
   - X
   - C
