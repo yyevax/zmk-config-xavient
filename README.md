@@ -47,7 +47,7 @@ The close shortcuts uses combo keys to prevent accidental keypresses.
 
 I also used caksoylar's [`keymap-drawer`](https://github.com/caksoylar/keymap-drawer) to generate the representation below:
 
-![Keymap Representation](./keymap-drawer/xavien-km.svg?raw=true "Keymap Representation")
+![Keymap Representation](./keymap-drawer/xavien.svg?raw=true "Keymap Representation")
 
 
 Keymaps for QMK Firmware under development.
