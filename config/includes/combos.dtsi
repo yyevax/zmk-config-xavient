@@ -39,8 +39,8 @@
         COMBO(MINUS,        &kp MINUS,       LM3 LM2 LM1,     DEF,          80,  50)  //    -
         COMBO(EXCL,          &kp EXCL,       LB3 LB2 LB1,     DEF,          80,  50)  //    !
 
-        COMBO(SEMI,          &kp SEMI,       RT1 RT2,         DEF,          80,  50)  //    ;
-        COMBO(COLON,        &kp COLON,       RT2 RT3,         DEF,          80,  50)  //    :
+        COMBO(COLON,        &kp COLON,       RT1 RT2,         DEF,          80,  50)  //    :
+        COMBO(SEMI,          &kp SEMI,       RT2 RT3,         DEF,          80,  50)  //    ;
         COMBO(DQT,            &kp DQT,       RM1 RM2,         DEF,          80,  50)  //    "
         COMBO(SQT,            &kp SQT,       RM2 RM3,         DEF,          80,  50)  //    '
         COMBO(L_THAN,   &kp LESS_THAN,       RB1 RB2,         DEF,          80,  50)  //    <
@@ -86,6 +86,7 @@
         COMBO(FIND,        &kp LC(F),    LT3 LT2 LT1,        NAV,          80,  50)  //    CTRL + F
         COMBO(ALL,         &kp LC(A),        LM4 LM3,        NAV,          80,  50)  //    CTRL + A
         COMBO(SAVE,        &kp LC(S),    LM3 LM2 LM1,        NAV,          80,  50)  //    CTRL + S
+        COMBO(BT_TOG,   &out OUT_TOG,    LB3 LB2 LB1,        NAV,          80,  50)  //    BLE TOGGLE
 
 
         //MACNAV
@@ -98,6 +99,7 @@
         COMBO(FIND_MAC,        &kp LG(F),    LT3 LT2 LT1,        MACNAV,       80,  50)  //    CTRL + F
         COMBO(ALL_MAC,         &kp LG(A),        LM4 LM3,        MACNAV,       80,  50)  //    CTRL + A
         COMBO(SAVE_MAC,        &kp LG(S),    LM3 LM2 LM1,        MACNAV,       80,  50)  //    CTRL + S
+        COMBO(BT_TOG_MAC,   &out OUT_TOG,    LB3 LB2 LB1,        NAV,          80,  50)  //    BLE TOGGLE
 
 
         //SCREEN
