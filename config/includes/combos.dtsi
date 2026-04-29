@@ -69,14 +69,12 @@
         COMBO(WIN_CLOSE,   &kp LA(F4),       LM3 LM2 LM1,     SCREEN,        80,  50)  //    ALT  + F4
         COMBO(DESK_CLOSE,    &kp D_CL,       LB3 LB2 LB1,     SCREEN,        80,  50)  //    WIN  + CTRL   + TAB
 
-        //MEDIA
-        COMBO(PLAYPAUSE,     &kp C_PP,       LM3 LM2 LM1,     MEDIA,        80,  50)  //    PLAY PAUSE
 
         //TAP
         COMBO(toDEF,          &to DEF,       LH2 RH2,         TAP,          80,  50)  //    DEF LAYER CHANGE
         
         //SYS
-        COMBO(VAL,            &to VAL,       LT0 RT0,         SYS,          80,  50)  //    VAL LAYER CHANGE
+        COMBO(GAME,          &to GAME,       LT0 RT0,         SYS,          80,  50)  //    VAL LAYER CHANGE
         COMBO(TAP,            &to TAP,       LM0 RM0,         SYS,          80,  50)  //    TAP LAYER CHANGE
         COMBO(EXTRA,        &to EXTRA,       LB0 RB0,         SYS,          80,  50)  //    EXTRA LAYER CHANGE
         COMBO(DEFAULT,        &to DEF,       LT4 RT4,         SYS,          80,  50)  //    EXTRA LAYER CHANGE
