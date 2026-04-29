@@ -10,6 +10,9 @@
 &six_column_transform {
 	col-offset = <6>;
 };
+&default_transform {
+    col-offset = <5>;
+};
 
 &kscan0 {
     col-gpios
