@@ -1,4 +1,2 @@
-#define MOUSE_KEYS
-#include "keypos_def/keypos_36keys.h"
+#include "keypos_def/keypos_42keys.h"
 #include "includes/keymap.dtsi"
-#include <dt-bindings/zmk/rgb.h>
