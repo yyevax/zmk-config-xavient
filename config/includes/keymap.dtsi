@@ -22,15 +22,15 @@
 #define DEF 0
 #define NUM 1
 #define NAV 2
-#define SYM 4
-#define SCREEN 5
-#define FUN 6
-#define MEDIA 7
-#define GAME 8
-#define EXTRA 9
-#define EXTRA_TWO 10
-#define TAP 11
-#define SYS 12
+#define SYM 3
+#define SCREEN 4
+#define FUN 5
+#define MEDIA 6
+#define GAME 7
+#define EXTRA 8
+#define EXTRA_TWO 9
+#define TAP 10
+#define SYS 11
 
 
 
