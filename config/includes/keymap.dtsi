@@ -200,7 +200,7 @@ ZMK_HOLD_TAP(hmr,
                 &none,        &none,        &none,        &kp LC(F),         &kp TAB_LT,    &kp TAB_RT,      &none,        &none,        &none,       &none,       &none,       &none,
                 &none,        &kp LC(A),    &kp LC(B),    &kp LC(S),         &kp LS(TAB),   &swapper,        &none,        &none,        &none,       &none,       &none,       &none,
                 &none,        &none,        &none,        &kp LG(LC(F4)),    &kp D_LT,      &kp D_RT,        &none,        &none,        &none,       &none,       &none,       &none,
-                                                          &none,             &none,         &none,           &none,        &none,        &none
+                                                          &trans,            &trans,        &trans           &trans,       &trans,       &trans
             )>;
         };
 
