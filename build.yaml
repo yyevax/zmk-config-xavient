@@ -14,17 +14,17 @@
 ---
 include:
   - board: nice_nano@2
-    shield: xavien_left nice_view
+    shield: xavien_left nice_view_adapter nice_view_gem
   - board: nice_nano@2
-    shield: xavien_right nice_view
+    shield: xavien_right nice_view_adapter nice_view_gem
   - board: nice_nano@2
     shield: xavien_dongle
   - board: xiao_ble
     shield: xavien_dongle_xiao
   - board: nice_nano@2
-    shield: xavien_left_master nice_view
+    shield: xavien_left_master nice_view_adapter nice_view_gem
   - board: nice_nano@2
-    shield: xavien_right_master nice_view
+    shield: xavien_right_master nice_view_adapter nice_view_gem
   - board: nice_nano@2
     shield: settings_reset
   - board: xiao_ble
