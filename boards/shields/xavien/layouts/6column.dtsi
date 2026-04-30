@@ -4,7 +4,7 @@
 / {
     xavien_six_col_layout: xavien_six_col_layout {
         compatible = "zmk,physical-layout";
-        display-name = "6 Column";
+        display-name = "Xavient";
 
         keys  //                     w   h    x    y     rot    rx    ry
             = <&key_physical_attrs 100 100    0   37       0     0     0>
