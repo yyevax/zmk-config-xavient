@@ -40,7 +40,7 @@ layers:
   - {t: ESC, h: MEDIA}
   - {t: TAB, h: NAV}
   - {t: SPACE, h: SCREEN}
-  - {t: BSPC, h: SYMBOL}
+  - {t: BSPC, h: SYM}
   - {t: RET, h: NUM}
   - {t: DEL, h: FUNCTION}
   NUM:
@@ -129,7 +129,7 @@ layers:
   - '&mkp LCLK'
   - '&mkp RCLK'
   - ''
-  SYMBOL:
+  SYM:
   - ''
   - '~'
   - '&'
