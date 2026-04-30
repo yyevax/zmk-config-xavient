@@ -12,10 +12,6 @@
     transform = <&six_column_transform>;
 };
 
-&xavien_five_col_layout {
-    transform = <&default_transform>;
-};
-
 / {
 
 	chosen {
