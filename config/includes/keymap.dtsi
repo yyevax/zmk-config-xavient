@@ -235,7 +235,7 @@ ZMK_HOLD_TAP(hmr,
             )>;
         };
 
-        extra_two_layer {
+        extra_layer {
             label = "EXTRA"; // EXTRA
             bindings = <LAYER_FROM42(
                 &none,        &none,        &none,        &none,       &none,        &none,            &none,        &none,        &none,      &none,       &none,       &none,
@@ -245,7 +245,7 @@ ZMK_HOLD_TAP(hmr,
             )>;
         };
 
-         extra_layer {
+         extra_two_layer {
             label = "EXTRA_TWO"; // EXTRA
             bindings = <LAYER_FROM42(
                 &none,        &none,        &none,        &none,       &none,        &none,            &none,        &none,        &none,      &none,       &none,       &none,
