@@ -113,7 +113,7 @@ ZMK_HOLD_TAP(hmr,
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <4 3>;
+            if-layers = <3 4>;
             then-layer = <11>; 
         };
     };
