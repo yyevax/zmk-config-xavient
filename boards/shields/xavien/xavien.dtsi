@@ -9,11 +9,11 @@
 
 
 &xavien_six_col_layout {
-    transform = <&six_column_transform>;
+    transform = <&xavien_six_col_layout>;
 };
 
 &xavien_five_col_layout {
-    transform = <&five_column_transform>;
+    transform = <&xavien_five_col_layout>;
 };
 
 / {
