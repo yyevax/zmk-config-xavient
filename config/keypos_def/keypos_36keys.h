@@ -35,6 +35,9 @@
 
 #pragma once
 
+// Extra key bindings
+#define SWP_POS 13
+
 #define LT0  4  // left-top row
 #define LT1  3
 #define LT2  2
