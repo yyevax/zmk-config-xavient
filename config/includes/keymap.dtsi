@@ -50,8 +50,7 @@
 #define TAB_RT LC(TAB)
 #define TAB_LT LC(LS(TAB))
 
-// Extra key bindings
-#define SWP_POS 16
+
 
 &lt { quick_tap_ms = <250>; };
 &lt { quick_tap_ms = <250>; };
