@@ -42,6 +42,8 @@
 */
 
 #pragma once
+// Extra key bindings
+#define SWP_POS 16
 
 #define LT0 5
 #define LT1 4
