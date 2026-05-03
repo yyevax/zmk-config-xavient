@@ -12,8 +12,8 @@ manifest:
       url-base: https://github.com/duanexavierbondad
     - name: dhruvinsh
       url-base: https://github.com/dhruvinsh
-    - name: m165437
-      url-base: https://github.com/M165437
+    - name: yyevax
+      url-base: https://github.com/yyevax
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -28,8 +28,8 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: main
-    - name: nice-view-gem
-      remote: m165437
+    - name: nice-view-peripheral-animation
+      remote: yyevax
       revision: main
   self:
     path: config
