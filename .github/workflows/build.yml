@@ -2,6 +2,8 @@ name: Build ZMK firmware
 on:
   workflow_dispatch:
   push:
+    branches:
+      - experimental/zmk-studio-3x6-displays
     paths:
       - config/west.yml
       - config/*.keymap
