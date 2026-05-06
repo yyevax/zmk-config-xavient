@@ -32,6 +32,6 @@ manifest:
       revision: main
     - name: nice-view-config
       remote: yyevax
-      revision: peripheral_images
+      revision: peripheral-slideshow
   self:
     path: config
