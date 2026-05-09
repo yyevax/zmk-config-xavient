@@ -12,7 +12,7 @@
         compatible = "zmk,input-mouse-ps2";
         status = "okay";
 
-        data-gpios = <&pro_micro 15 GPIO_ACTIVE_HIGH>; /* B2 / TP_DATA_r */
+        data-gpios = <&pro_micro 14 GPIO_ACTIVE_HIGH>; /* B2 / TP_DATA_r */
         clk-gpios = <&pro_micro 13 GPIO_ACTIVE_HIGH>;  /* B6 / TP_CLK_r */
         reset-gpios = <&pro_micro 12 GPIO_ACTIVE_LOW>; /* B5 / TP_RESET */
 
