@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: MIT
  */
 
- #include "xavien.dtsi"
+
 
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "layouts/layouts.dtsi"
@@ -16,6 +16,25 @@
 
 &xavien_five_col_layout {
     transform = <&default_transform>;
+};
+
+/ {
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        trackpoint_split_right: trackpoint_split_right@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+            status = "okay";
+        };
+    };
+
+    trackpoint_right_listener: trackpoint_right_listener {
+        compatible = "zmk,input-listener";
+        status = "okay";
+        device = <&trackpoint_split_right>;
+    };
 };
 
 &trackpoint_split_right {
