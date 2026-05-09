@@ -17,6 +17,23 @@
 };
 
 / {
+    split_inputs {
+        #address-cells = <1>;
+        #size-cells = <0>;
+
+        trackpoint_split_right: trackpoint_split_right@0 {
+            compatible = "zmk,input-split";
+            reg = <0>;
+        };
+    };
+
+    trackpoint_right_listener: trackpoint_right_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+    };
+};
+
+/ {
 
 	chosen {
 		zmk,kscan = &kscan0;

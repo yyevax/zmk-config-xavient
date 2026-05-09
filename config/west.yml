@@ -16,6 +16,8 @@ manifest:
       url-base: https://github.com/M165437
     - name: yyevax
       url-base: https://github.com/yyevax
+    - name: badjeff
+      url-base: https://github.com/badjeff
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -33,5 +35,8 @@ manifest:
     - name: nice-view-config
       remote: yyevax
       revision: peripheral-slideshow
+    - name: kb_zmk_ps2_mouse_trackpoint_driver
+      remote: badjeff
+      revision: 2df4d6d0d305ed121b1efbf0a028b44b174dccc7
   self:
     path: config

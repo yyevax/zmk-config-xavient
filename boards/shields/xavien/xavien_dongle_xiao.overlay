@@ -16,6 +16,11 @@
     transform = <&default_transform>;
 };
 
+&trackpoint_right_listener {
+    status = "okay";
+    device = <&trackpoint_split_right>;
+};
+
 / {
 
 	chosen {
