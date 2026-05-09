@@ -28,7 +28,7 @@
 
 &trackpoint_split_right {
     status = "okay";
-    input = <&mouse_ps2>;
+    device = <&mouse_ps2>;
 };
 
 &six_column_transform {
