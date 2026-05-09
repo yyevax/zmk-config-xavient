@@ -2,28 +2,77 @@
 
 #include "xavien.dtsi"
 
+#define MOUSE_PS2_PIN_SCL_PRO_MICRO <&pro_micro 13 GPIO_ACTIVE_HIGH> /* B6 / TP_CLK_r */
+#define MOUSE_PS2_PIN_SDA_PRO_MICRO <&pro_micro 14 GPIO_ACTIVE_HIGH> /* B2 / TP_DATA_r */
+#define MOUSE_PS2_PIN_RST_PRO_MICRO <&pro_micro 12 GPIO_ACTIVE_LOW>  /* B5 / TP_RESET */
+
+#define MOUSE_PS2_PIN_SDA_PINCTRL <NRF_PSEL(UART_RX, 1, 11)> /* CHECK THIS */
+#define MOUSE_PS2_PIN_UNEXPOSED_TX <NRF_PSEL(UART_TX, 0, 27)>
+#define MOUSE_PS2_PIN_UNEXPOSED_RX <NRF_PSEL(UART_RX, 0, 28)>
+#define MOUSE_PS2_UART_BAUD_RATE <14400>
+
+&pinctrl {
+    uart0_ps2_default: uart0_ps2_default {
+        group1 {
+            psels = MOUSE_PS2_PIN_UNEXPOSED_TX,
+                    MOUSE_PS2_PIN_SDA_PINCTRL;
+        };
+    };
+
+    uart0_ps2_sleep: uart0_ps2_sleep {
+        group1 {
+            psels = MOUSE_PS2_PIN_UNEXPOSED_TX,
+                    MOUSE_PS2_PIN_SDA_PINCTRL;
+            low-power-enable;
+        };
+    };
+
+    uart0_ps2_off: uart0_ps2_off {
+        group1 {
+            psels = MOUSE_PS2_PIN_UNEXPOSED_TX,
+                    MOUSE_PS2_PIN_UNEXPOSED_RX;
+        };
+    };
+};
+
+&uart0 {
+    status = "okay";
+    compatible = "nordic,nrf-uarte";
+    current-speed = MOUSE_PS2_UART_BAUD_RATE;
+
+    pinctrl-0 = <&uart0_ps2_default>;
+    pinctrl-1 = <&uart0_ps2_off>;
+    pinctrl-names = "default", "sleep";
+
+    uart_ps2: uart_ps2 {
+        status = "okay";
+        compatible = "uart-ps2";
+
+        scl-gpios = MOUSE_PS2_PIN_SCL_PRO_MICRO;
+        sda-gpios = MOUSE_PS2_PIN_SDA_PRO_MICRO;
+    };
+};
+
+/ {
+    mouse_ps2: mouse_ps2 {
+        status = "okay";
+        compatible = "zmk,input-mouse-ps2";
+
+        ps2-device = <&uart_ps2>;
+        rst-gpios = MOUSE_PS2_PIN_RST_PRO_MICRO;
+    };
+};
+
+&trackpoint_split_right {
+    device = <&mouse_ps2>;
+};
+
 /{chosen {
     		zephyr,display = &nice_view;
 	};
 };
 
-/ {
-    trackpoint: trackpoint {
-        compatible = "zmk,input-mouse-ps2";
-        status = "okay";
 
-        data-gpios = <&pro_micro 14 GPIO_ACTIVE_HIGH>; /* B2 / TP_DATA_r */
-        clk-gpios = <&pro_micro 13 GPIO_ACTIVE_HIGH>;  /* B6 / TP_CLK_r */
-        reset-gpios = <&pro_micro 12 GPIO_ACTIVE_LOW>; /* B5 / TP_RESET */
-
-        // tune later
-        sensitivity = <128>;
-    };
-};
-
-&trackpoint_split_right {
-    device = <&trackpoint>;
-};
 
 &six_column_transform {
 	col-offset = <6>;
