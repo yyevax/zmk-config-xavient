@@ -27,7 +27,8 @@
 };
 
 &trackpoint_split_right {
-    device = <&mouse_ps2>;
+    status = "okay";
+    input = <&mouse_ps2>;
 };
 
 &six_column_transform {

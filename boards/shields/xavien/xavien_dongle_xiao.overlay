@@ -4,6 +4,8 @@
  * SPDX-License-Identifier: MIT
  */
 
+ #include "xavien.dtsi"
+
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "layouts/layouts.dtsi"
 
@@ -16,10 +18,13 @@
     transform = <&default_transform>;
 };
 
-&trackpoint_right_listener {
+&trackpoint_split_right {
     status = "okay";
 };
 
+&trackpoint_right_listener {
+    status = "okay";
+};
 / {
 
 	chosen {

@@ -24,6 +24,7 @@
         trackpoint_split_right: trackpoint_split_right@0 {
             compatible = "zmk,input-split";
             reg = <0>;
+            status = "disabled";
         };
     };
 
