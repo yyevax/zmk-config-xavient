@@ -1,65 +1,28 @@
-
-
 #include "xavien.dtsi"
 
-#define MOUSE_PS2_PIN_SCL_PRO_MICRO <&pro_micro 13 GPIO_ACTIVE_HIGH> /* B6 / TP_CLK_r */
-#define MOUSE_PS2_PIN_SDA_PRO_MICRO <&pro_micro 14 GPIO_ACTIVE_HIGH> /* B2 / TP_DATA_r */
-#define MOUSE_PS2_PIN_RST_PRO_MICRO <&pro_micro 12 GPIO_ACTIVE_LOW>  /* B5 / TP_RESET */
-
-#define MOUSE_PS2_PIN_SDA_PINCTRL <NRF_PSEL(UART_RX, 1, 11)> /* CHECK THIS */
-#define MOUSE_PS2_PIN_UNEXPOSED_TX <NRF_PSEL(UART_TX, 0, 27)>
-#define MOUSE_PS2_PIN_UNEXPOSED_RX <NRF_PSEL(UART_RX, 0, 28)>
-#define MOUSE_PS2_UART_BAUD_RATE <14400>
-
-&pinctrl {
-    uart0_ps2_default: uart0_ps2_default {
-        group1 {
-            psels = MOUSE_PS2_PIN_UNEXPOSED_TX,
-                    MOUSE_PS2_PIN_SDA_PINCTRL;
-        };
-    };
-
-    uart0_ps2_sleep: uart0_ps2_sleep {
-        group1 {
-            psels = MOUSE_PS2_PIN_UNEXPOSED_TX,
-                    MOUSE_PS2_PIN_SDA_PINCTRL;
-            low-power-enable;
-        };
-    };
-
-    uart0_ps2_off: uart0_ps2_off {
-        group1 {
-            psels = MOUSE_PS2_PIN_UNEXPOSED_TX,
-                    MOUSE_PS2_PIN_UNEXPOSED_RX;
-        };
-    };
-};
-
-&uart0 {
-    status = "okay";
-    compatible = "nordic,nrf-uarte";
-    current-speed = MOUSE_PS2_UART_BAUD_RATE;
-
-    pinctrl-0 = <&uart0_ps2_default>;
-    pinctrl-1 = <&uart0_ps2_off>;
-    pinctrl-names = "default", "sleep";
-
-    uart_ps2: uart_ps2 {
-        status = "okay";
-        compatible = "uart-ps2";
-
-        scl-gpios = MOUSE_PS2_PIN_SCL_PRO_MICRO;
-        sda-gpios = MOUSE_PS2_PIN_SDA_PRO_MICRO;
-    };
-};
+#define TP_CLK_PIN   <&pro_micro 10 GPIO_ACTIVE_HIGH> /* TP_CLK_r  / Pro Micro 10 / A10 */
+#define TP_DATA_PIN  <&pro_micro 16 GPIO_ACTIVE_HIGH> /* TP_DATA_r / Pro Micro 16 / MOSI */
+#define TP_RESET_PIN <&pro_micro 9 GPIO_ACTIVE_LOW>   /* TP_RESET_r / Pro Micro 9 / A9 */
 
 / {
-    mouse_ps2: mouse_ps2 {
+    gpio_ps2: gpio_ps2 {
+        compatible = "gpio-ps2";
         status = "okay";
-        compatible = "zmk,input-mouse-ps2";
 
-        ps2-device = <&uart_ps2>;
-        rst-gpios = MOUSE_PS2_PIN_RST_PRO_MICRO;
+        scl-gpios = TP_CLK_PIN;
+        sda-gpios = TP_DATA_PIN;
+    };
+
+    mouse_ps2: mouse_ps2 {
+        compatible = "zmk,input-mouse-ps2";
+        status = "okay";
+
+        ps2-device = <&gpio_ps2>;
+        rst-gpios = TP_RESET_PIN;
+    };
+
+    chosen {
+        zephyr,display = &nice_view;
     };
 };
 
@@ -67,23 +30,17 @@
     device = <&mouse_ps2>;
 };
 
-/{chosen {
-    		zephyr,display = &nice_view;
-	};
-};
-
-
-
 &six_column_transform {
-	col-offset = <6>;
+    col-offset = <6>;
 };
+
 &default_transform {
     col-offset = <6>;
 };
 
 &kscan0 {
     col-gpios
-       	= <&pro_micro 14 GPIO_ACTIVE_HIGH>
+        = <&pro_micro 14 GPIO_ACTIVE_HIGH>
         , <&pro_micro 15 GPIO_ACTIVE_HIGH>
         , <&pro_micro 18 GPIO_ACTIVE_HIGH>
         , <&pro_micro 19 GPIO_ACTIVE_HIGH>
@@ -92,20 +49,20 @@
         ;
 };
 
-
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 20)>,
-                <NRF_PSEL(SPIM_MOSI, 0, 17)>,
-                <NRF_PSEL(SPIM_MISO, 0, 25)>;
+                    <NRF_PSEL(SPIM_MOSI, 0, 17)>,
+                    <NRF_PSEL(SPIM_MISO, 0, 25)>;
         };
     };
+
     spi0_sleep: spi0_sleep {
         group1 {
             psels = <NRF_PSEL(SPIM_SCK, 0, 20)>,
-                <NRF_PSEL(SPIM_MOSI, 0, 17)>,
-                <NRF_PSEL(SPIM_MISO, 0, 25)>;
+                    <NRF_PSEL(SPIM_MOSI, 0, 17)>,
+                    <NRF_PSEL(SPIM_MISO, 0, 25)>;
             low-power-enable;
         };
     };

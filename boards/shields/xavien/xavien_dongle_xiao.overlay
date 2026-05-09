@@ -18,7 +18,6 @@
 
 &trackpoint_right_listener {
     status = "okay";
-    device = <&trackpoint_split_right>;
 };
 
 / {
