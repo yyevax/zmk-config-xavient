@@ -30,8 +30,5 @@ manifest:
     - name: zmk-helpers
       remote: urob
       revision: main
-    - name: nice-view-config
-      remote: yyevax
-      revision: main
   self:
     path: config
