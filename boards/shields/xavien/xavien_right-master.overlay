@@ -7,7 +7,7 @@
 #include "xavien.dtsi"
 
 /{chosen {
-    		zephyr,display = &nice_view;
+    		zephyr;
 	};
 };
 
