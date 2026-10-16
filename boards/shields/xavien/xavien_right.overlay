@@ -3,7 +3,7 @@
 #include "xavien.dtsi"
 
 /{chosen {
-    		//zephyr
+    		zephyr
 	};
 };
 
