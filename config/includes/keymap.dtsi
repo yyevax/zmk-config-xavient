@@ -244,10 +244,10 @@ ZMK_HOLD_TAP(hmr,
         macscreen_layer {
             label = "MACSCREEN"; // MAC SCREEN
             bindings = <LAYER_FROM42(
-                &none,        &none,        &none,        &none,       &kp LG(F),    &kp TAB_LT,   &kp TAB_RT,   &none,        &none,       &none,       &none,       &none,
-                &none,        &none,        &kp LG(A),    &kp LG(B),   &kp LG(S),    &kp LS(TAB),  &swappermac,  &none,        &none,       &none,       &none,       &none,
-                &none,        &none,        &none,        &none,       &none,        &kp DMAC_LT,  &kp DMAC_RT,  &none,        &none,       &none,       &none,       &none,
-                                                        &trans, &trans, &trans, &trans, &trans, &trans
+                &none,        &none,        &none,        &kp LG(F),    &kp TAB_LT,   &kp TAB_RT,   &none,   &none,        &none,       &none,       &none,       &none,
+                &none,        &kp LG(A),    &kp LG(B),    &kp LG(S),    &kp LS(TAB),  &swappermac,  &none,   &none,        &none,       &none,       &none,       &none,
+                &none,        &none,        &none,        &none,        &kp DMAC_LT,  &kp DMAC_RT,  &none,   &none,        &none,       &none,       &none,       &none,
+                                                          &trans,       &trans,       &trans,       &trans,  &trans,       &trans
             )>;
         };
 

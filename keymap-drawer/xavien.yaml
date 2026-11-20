@@ -305,7 +305,6 @@ layers:
   - ''
   - ''
   - ''
-  - ''
   - Gui+F
   - Ctl+Sft+TAB
   - Ctl+TAB
@@ -333,6 +332,7 @@ layers:
   - ''
   - Ctl+LEFT
   - Ctl+RIGHT
+  - ''
   - ''
   - ''
   - ''
